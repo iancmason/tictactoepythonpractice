@@ -2,7 +2,8 @@
 
 import random
 
-def drawBoard(board):
+
+def draw_board(board):
     # This function prints out the board that it was passed.
 
     # "board" is a list of 10 strings representing the board (ignore index 0)
@@ -12,7 +13,8 @@ def drawBoard(board):
     print('-+-+-')
     print(board[1] + '|' + board[2] + '|' + board[3])
 
-def inputPlayerLetter()
+
+def input_player_letter():
     letter = ''
     while not (letter == 'X' or letter == 'O'):
         print('Do you want to be X or O?')
@@ -22,12 +24,13 @@ def inputPlayerLetter()
     if letter == 'O':
         return ['O', 'X']
 
-def whoGoesFirst():
-    if random.randint(0, 1): == 0:
+
+def who_goes_first():
+    if random.randint(0, 1) == 0:
         return 'computer'
     else:
         return 'player'
 
-def makeMove(board, letter, move):
-    board[move] = letter
 
+def make_move(board, letter, move):
+    board[move] = letter
